@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease-in-out;
+    
+   
+    background: linear-gradient(rgba(168, 167, 167, 0.3), rgba(0, 0, 0, 0.3)), 
+                url('https://i.pinimg.com/originals/b1/6d/cd/b16dcde0c572273c9f5c813dd6df96ed.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+.content-section {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+
+.logo-img {
+    width: 280px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-img:hover {
+    transform: scale(1.05);
+}
+
+
+.search-bar {
+    width: 600px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.search-bar:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.search-bar input {
+    flex-grow: 1;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #333;
+}
+
+.search-bar input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+.search-bar i {
+    font-size: 18px;
+    color: #666;
+    margin-right: 12px;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.search-bar i:hover {
+    color: #111;
+}
+
+
+@media only screen and (max-width: 650px) {
+   
+    .logo-img {
+        width: 200px;
+    }
+
+    .search-bar {
+        width: 90%;
+        height: 45px;
+    }
+
+    .search-bar i {
+        font-size: 16px;
+    }
+}
